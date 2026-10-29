@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: "Kreon", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background-color: #f4f7f8;
+}
+
+header {
+    background-color: #0d3b66;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+nav {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+#titulo-curso {
+    display: block;
+    padding: 1rem;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1c1c1c;
+}
+
+nav a {
+    box-sizing: border-box;
+    flex: 1 1 140px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+}
+
+nav a:hover {
+    background-color: #0d3b66;
+}
+
+main {
+    max-width: 960px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 1rem;
+}
+
+.card h2 {
+    margin: -1rem -1rem 1rem;
+    padding: 0.6rem;
+    background-color: #0d3b66;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+
+.card figure {
+    margin: 0.5rem 0 1rem;
+}
+
+.card figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.card a {
+    color: #0d3b66;
+}
+
+footer {
+    background-color: #0d3b66;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+#ultimaModificacao {
+    color: #ffe08a;
+}
+
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #titulo-curso {
+        font-size: 1.25rem;
+    }
+
+    nav a {
+        flex-basis: 50%;
+    }
+}
